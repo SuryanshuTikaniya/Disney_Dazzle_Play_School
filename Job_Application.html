@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application - Join Our Team</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">School Name</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="careers.html">Careers</a></li>
+      </ul>
+      <!-- Dark/Light Toggle -->
+      <button id="theme-toggle">Toggle Dark/Light</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="application-section">
+      <h1>Job Application</h1>
+      <form id="multiStepForm" class="application-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
+        
+        <!-- Step 1: Personal Information -->
+        <div class="form-step form-step-active">
+          <h2>Step 1: Personal Information</h2>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" placeholder="Enter your email" required>
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+          <button type="button" class="btn-next">Next</button>
+        </div>
+
+        <!-- Step 2: Job Preferences -->
+        <div class="form-step">
+          <h2>Step 2: Job Preferences</h2>
+          <label for="position">Position Applying For</label>
+          <select id="position" name="position" required>
+            <option value="">Select a Position</option>
+            <option value="Teacher">Teacher (Any Subject)</option>
+            <option value="IT Support">IT Support Staff</option>
+            <option value="Admin Assistant">Administrative Assistant</option>
+            <option value="Library Assistant">Library Assistant</option>
+            <option value="School Coordinator">School Coordinator</option>
+            <option value="Security">Security & Support Staff</option>
+          </select>
+
+          <label for="message">Tell Us About Yourself</label>
+          <textarea id="message" name="message" rows="5" placeholder="Share your experience and qualifications." required></textarea>
+
+          <button type="button" class="btn-prev">Previous</button>
+          <button type="button" class="btn-next">Next</button>
+        </div>
+
+        <!-- Step 3: Attachments and Confirmation -->
+        <div class="form-step">
+          <h2>Step 3: Attachments</h2>
+          <label for="resume">Upload Your Resume (PDF or DOC)</label>
+          <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+          <!-- Option to send copy to applicant -->
+          <label>
+            <input type="checkbox" name="send_copy" value="yes">
+            Send me a copy of this application via email
+          </label>
+
+          <button type="button" class="btn-prev">Previous</button>
+          <button type="submit" class="btn-submit">Submit Application</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <p><strong>Email:</strong> <a href="mailto:hr@schoolname.edu">hr@schoolname.edu</a></p>
+      <p><strong>Phone:</strong> +1234567890</p>
+    </div>
+    <p class="copyright">© 2025 School Name. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

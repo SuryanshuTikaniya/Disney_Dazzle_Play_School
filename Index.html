@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Website - Home</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">School Name</a></div>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="Gallery.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ✅ Correct placement: Announcement below menu -->
+  <div class="announcement">
+    <marquee behavior="scroll" direction="left">
+      ⚠️ Important Update: Admissions open for 2025! Apply now before the deadline.
+    </marquee>
+  </div>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to Our School</h1>
+      <p>Shaping the future of tomorrow's leaders.</p>
+    </section>
+
+    <section class="overview">
+      <h2>Why Choose Our School?</h2>
+      <p>We provide high-quality education, a nurturing environment, and innovative learning experiences.</p>
+    </section>
+  </main>
+
+  <!-- Floating WhatsApp Button -->
+  <div id="whatsapp-float">
+    <a href="https://api.whatsapp.com/send?phone=+1234567890&text=Hello,%20I%20have%20an%20enquiry%20about%20your%20school" target="_blank">
+      <img src="assets/images/whatsapp-icon.png" alt="WhatsApp">
+    </a>
+  </div>
+  <section class="gallery">
+    <h2>School Gallery</h2>
+    <div class="gallery-container">
+      <img src="assets/images/gallery1.jpg" alt="School Event">
+      <img src="assets/images/gallery2.jpg" alt="Library">
+      <img src="assets/images/gallery3.jpg" alt="Sports Day">
+      <img src="assets/images/gallery4.jpg" alt="Science Fair">
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong>Address:</strong> 123 Education Lane, City, Country</p>
+        <p><strong>Email:</strong> <a href="mailto:info@schoolname.edu">info@schoolname.edu</a></p>
+        <p><strong>Phone:</strong> +1234567890</p>
+      </div>
+    </div>
+    <p class="copyright">© 2025 School Name. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
